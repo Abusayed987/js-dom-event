@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cannect with input+button </title>
+</head>
+<body>
+    <!-- number:01
+    <p id="input_text_display">Input Text Here</p>
+    <input id="input_field" type="text">
+    <button id="btn">Update</button>-->
+
+    <!-- number :02 
+        <p id="display_text">input text show here </p>
+        <input id="input_text" type="text">
+        <button id="btn">Update</button> -->
+    
+    <!-- number :03 -->
+    <p id="display_text">This is a Removal text </p>
+    <input id="input_text" type="text">
+    <button id="btn">Update</button>
+
+
+    <script src="js/event-summay.js"></script>
+    <script>
+        document.getElementById('btn').addEventListener('click', function(){
+            const input_field = document.getElementById('input_text');
+            const inputText = input_field.value;
+
+            const p = document.getElementById('display_text');
+            p.innerText = inputText
+            input_field.value = '';
+        })
+
+    </script>
+</body>
+</html>
