@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create Comment box</title>
+</head>
+<body>
+    <!-- number 01
+    <h1> Please add Your Comment</h1>
+    <div id="comment_container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab qui est voluptates, earum corporis id ducimus a doloribus nulla perferendis officiis laborum nihil quis quod et magni explicabo debitis excepturi.</p>
+        <p>Labore, rerum. Molestiae iste aperiam cumque recusandae officia sunt quas nisi unde, exercitationem quasi aliquid nostrum ea numquam, omnis distinctio sint facilis id accusamus commodi necessitatibus reiciendis. Magnam, est quis!</p>
+        <p>Harum unde, natus eveniet praesentium at sequi sit provident optio, iusto eum, consequuntur odit recusandae sed molestias ipsum cum voluptas voluptatibus a! At facilis veniam commodi incidunt iure temporibus eum.</p>
+    </div>
+    <textarea name="" id="textarea" cols="70" rows="08"></textarea>
+    <br>
+    <button id="btn">Post</button> -->
+
+    <!-- number:02  
+    <h1>Please write Your comment </h1>
+    <div id="comment_container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, totam! Similique, sunt maiores ipsa eum sed veniam dolorum quia facilis totam iure rerum doloribus amet dicta quis harum! Suscipit, magnam?</p>
+        <p>Magni error doloremque odio ex reprehenderit ea voluptates iusto tempora asperiores excepturi, repellat ducimus laudantium minus dolor fuga architecto molestias omnis nihil voluptas iste veritatis odit sit commodi perferendis. Architecto!</p>
+    </div>
+    <textarea name="" id="textArea" cols="60" rows="10"></textarea> <br>
+    <button id="btn">Post</button> -->
+    <!-- number :03 -->
+    <h1> ASD comment here </h1>
+    <div id="comment_container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis blanditiis aspernatur similique? Molestias, laboriosam. Mollitia neque architecto explicabo blanditiis, asperiores beatae laborum earum debitis illum vitae praesentium ipsa facilis quam?</p>
+        <p>Praesentium veritatis ea officia voluptatem possimus numquam! Distinctio in amet quas laudantium quasi aliquid repellat quis perspiciatis, excepturi accusantium, sunt deserunt quaerat enim consequatur fugit et aliquam quo sed a.</p>
+    </div>
+    <textarea name="" id="comment_box" cols="30" rows="10"></textarea> <br>
+    <button id="btn">Post</button>
+
+
+
+    <script src="js/commentBox.js"></script>
+    <script>
+        document.getElementById('btn').addEventListener('click', function(){
+            const commentBox = document.getElementById('comment_box');
+            const newComment = commentBox.value;
+
+            const commentContainer = document.getElementById('comment_container')
+            const p = document.createElement('p');
+            p.innerText = newComment;
+            commentContainer.appendChild(p);
+
+            commentBox.value = '';
+        })
+    </script>
+</body>
+</html>
