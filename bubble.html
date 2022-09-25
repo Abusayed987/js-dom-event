@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event bubble and Stop propagating</title>
+</head>
+<body id="body">
+    
+    <h1>Use Event Bubble and stop propagation </h1>
+     <!-- p:01 
+    <section id="section">
+        <ul id="ul-list">
+            <li id="list-item-1">Lorem, ipsum.</li>
+            <li id="list-item-2">Non, sit?</li>
+            <li id="list-item-3">Quibusdam, nulla!</li>
+            <li id="list-item-4">Enim, tempore.</li>
+        </ul>
+    </section>      completed -->
+     <!-- p:02  
+     <section id="section">
+        <ul id="ul_list">
+            <li id="list_1">Lorem, ipsum dolor.</li>
+            <li id="list_2">Tenetur, iusto dolorum.</li>
+            <li id="list_3">Vel, eum recusandae!</li>
+            <li id="list_4">Quod, quia delectus!</li>
+        </ul>
+     </section> Completed-->
+    <!-- p:03 -->
+    <script>
+        /*
+        // p:01
+        document.getElementById('list-item-2').addEventListener('click',function(event){
+            console.log('list-item 2 clicked');
+        })
+        document.getElementById('ul-list').addEventListener('click',function(event){
+            console.log('ul-list clicked');
+        })
+        document.getElementById('section').addEventListener('click',function(event){
+            console.log('section clicked');
+        })
+        document.getElementById('body').addEventListener('click',function(event){
+            console.log('body clicked');
+        })       */  
+        // p:02 
+        document.getElementById('list_4').addEventListener('click', function(event){
+            console.log('clicked option 4 in list tag');
+        })
+        document.getElementById('ul_list').addEventListener('click',function(event){
+            console.log('ul list er upore clicked');
+        })
+        document.getElementById('section').addEventListener('click',function(event){
+            console.log('section er upore clicked');
+
+        })
+        document.getElementById('section').addEventListener('click',function(event){
+            console.log('section er upore clicked 2');
+
+        })
+        document.getElementById('section').addEventListener('click',function(event){
+            console.log('section er upore clicked 3');
+
+        })
+        document.getElementById('section').addEventListener('click',function(event){
+            console.log('section er upore clicked 4');
+
+        })
+        document.getElementById('body').addEventListener('click',function(event){
+            console.log('body er upore clicked');
+        })
+
+
+
+
+        // p:03
+    </script>
+</body>
+</html>
